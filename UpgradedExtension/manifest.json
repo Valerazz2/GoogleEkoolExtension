@@ -1,0 +1,23 @@
+{
+     "manifest_version": 3,
+     "name": "My Extension",
+     "version": "1.0.1",
+     "permissions": [
+      "activeTab"
+    ],
+     "description": "upgraded extension for eKool",
+     "icons": {
+        "16": "images/Ekool.png",
+        "32": "images/Ekool.png",
+        "48": "images/Ekool.png",
+        "128": "images/Ekool.png"
+      },
+      "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": [
+            "<all_urls>"
+          ],
+          "all_frames": true
+        }]
+}
